@@ -256,7 +256,9 @@ span {
     position: absolute;
     left: 1664px;
     top: 912px;
+    
     }
+
 
 .link-button{
     width: 153px;
@@ -265,7 +267,14 @@ span {
     box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
     border: 0;
     border-radius: 19px;
+    transition-duration: 700ms;
     }
+
+.link-button:hover {
+    background-color: #FFE600;    
+    transition-duration: 300ms;
+    cursor: pointer;
+}
 
 .link-2{
     display: flex;
@@ -273,10 +282,8 @@ span {
     justify-content: center;
     align-items: center;
     padding: 30px 16px;
-    gap: 10px;
-    position: absolute;
-    left: 870px;
-    top: 1700px;
+    position: relative;
+    margin: auto;
     }
 
 .link-button-2{
@@ -286,14 +293,14 @@ span {
     box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
     border: 0;
     border-radius: 19px;
+    transition: 700ms;
     }
 
-.link-button:hover {
-    cursor: pointer;
-    }
 
 .link-button-2:hover{
     cursor: pointer;
+    background-color: #FFE600;    
+    transition-duration: 300ms;
     }
 
 
@@ -506,6 +513,12 @@ span {
     
 
 
+@media (max-width: 1875px) {
+    aside{
+        display: none;
+    }
+}
+
  @media  (max-width: 1280px) {
     
 body {
@@ -565,14 +578,16 @@ body {
     left: 1px;
     }
 
-.link-2 {
+
+footer {
+    height: 50px;
+    }
     
+.link-2 {
     display:flex;
-    margin-left: -290px;
-    margin-top: 1900px;
+    margin: -45px auto 5px auto;
     height: 25px;
     width: 100px;
-    margin-bottom: 20px;
     }
 
 .media-img {
